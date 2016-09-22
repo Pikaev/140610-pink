@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Pink</title>
+    </head>
+
+    <body>
+
+        <header class="page-header">
+            <div class="page-header__logo">
+                <img src="https://placeholdit.imgix.net/~text?txtsize=6&txt=75×22&w=75&h=22&txtpad=1" width="75" height="22" alt="Pink">
+            </div>
+            <nav class="main-nav" main-nav--closed main-nav--nojs>
+                <button class="main-nav__toggle" type="button">Открыть меню</button>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__items">
+                        <li class="main-nav__item"><a>Главная</a></li>
+                        <li class="main-nav__item"><a>Фотографии</a></li>
+                        <li class="main-nav__item  main-nav__item--active"><a>Конкурс</a></li>
+                        <li class="main-nav__item"><a>HMTL Academy</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <section class="page-header__background-mobile">
+            </section>
+        </header>
+
+        <form class="form" action="/echo" enctype="multipart/form-data" method="post">
+            <div class="form__wrapper">
+                <p class="form__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+                    <section class="form__personal-data">
+                        <div class="form__group">
+                            <label class="form__title" for="surname">Фамилия</label>
+                            <input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию" required>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__title" for="name">Имя</label>
+                            <input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__title" for="patronymic">Отчество</label>
+                            <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже" required>
+                        </div>
+                    </section>
+                    <section class="form__achievements">
+                        <fieldset class="form__fieldset">
+                            <legend class="form__title  form__title--legend">Ваши безбашенные достижения в путешествии</legend>
+                            <div class="form__part">
+                                <input class="form__input" type="checkbox" name="shark" id="shark" checked>
+                                <label class="form__text" for="shark">Сделал селфи с акулой</label>
+                            </div>
+                            <div class="form__part">
+                                <input class="form__input" type="checkbox" name="beach" id="beach" checked>
+                                <label class="form__text" for="beach">Обгорел на пляже</label>
+                            </div>
+                            <div class="form__part">
+                                <input class="form__input" type="checkbox" name="chuck-norris" id="chuck-norris">
+                                <label class="form__text" for="chuck-norris">Видел Чака Нориса</label>
+                            </div>
+                            <div class="form__part">
+                                <input class="form__input" type="checkbox" name="souvenir" id="souvenir">
+                                <label class="form__text" for="souvenir">Накупил сувениров</label>
+                            </div>
+                            <div class="form__part">
+                                <input class="form__input" type="checkbox" name="tower" id="tower" checked>
+                                <label class="form__text" for="tower">Удержал башню</label>
+                            </div>
+                            <div class="form__part">
+                                <input class="form__input" type="checkbox" name="defeated-hotel" id="defeated-hotel">
+                                <label class="form__text" for="defeated-hotel">Разгромил отель</label>
+                            </div>
+                        </fieldset>
+                    </section>
+                    <section class="form__contacts">
+                        <fieldset class="form__fieldset">
+                            <legend class="form__title  form__title--legend">Контактная информация</legend>
+                            <div class="form__group">
+                                <label class="form__title" for="phone">Номерок телефончика</label>
+                                <input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста" required>
+                            </div>
+                            <div class="form__group">
+                                <label class="form__title" for="email">Адресок почты</label>
+                                <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту" required>
+                            </div>
+                        </fieldset>
+                    </section>
+                    <section class="form__travel-app">
+                        <fieldset class="form__fieldset">
+                            <legend class="form__title  form__title--legend">С каким приложением путешествовали?</legend>
+                            <ul class="device-platform">
+                                <li class="device-platform__item">
+                                    <input class="form__input form__input--radio" type="radio" name="platform" value="Pink для iOS" id="ios" checked>
+                                    <label class="device-platform__title" for="ios">Pink для iOS</label>
+                                </li>
+                                <li class="device-platform__item">
+                                    <input class="form__input form__input--radio" type="radio" name="platform" value="Pink для Android" id="android">
+                                    <label class="device-platform__title" for="android">Pink для Android</label>
+                                </li>
+                                <li class="device-platform__item">
+                                    <input class="form__input form__input--radio" type="radio" name="platform" value="Pink для Windows Phone" id="windows phone">
+                                    <label class="device-platform__title" for="windows phone">Pink для Windows Phone</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </section>
+                    <section class="form__emotions">
+                        <fieldset class="form__fieldset">
+                            <legend class="form__title  form__title--legend">Опишите свои эмоции</legend>
+                            <textarea class="emotions-description" name="emotions" id="emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
+                        </fieldset>
+                    </section>
+                    <div class="form__container">
+                        <button class="btn btn--green" type="submit">Отправить форму</button>
+                        <div class="form__required-fields">* — обязательные для заполнения поля</div>
+                    </div>
+            </div>
+        </form>
+
+        <section class="page-footer">
+            <div class="page-footer__wrapper">
+                <div class="page-footer__logo">
+                    <img class="company-logo" src="https://placeholdit.imgix.net/~text?txtsize=13&txt=150×50&w=150&h=50" width="150" height="50">
+                </div>
+                <section class="social-items">
+                    <a class="social-item  social-item--twitter" href="#">Twitter<img class="social-img social-img--twitter" src="https://placeholdit.imgix.net/~text?txtsize=6&txt=50×50&w=50&h=50" width="50" height="50"></a>
+                    <a class="social-item  social-item--facebook" href="#">Facebook<img class="social-img social-img--facebook" src="https://placeholdit.imgix.net/~text?txtsize=6&txt=50×50&w=50&h=50" width="50" height="50"></a>
+                    <a class="social-item  social-item--youtube" href="#">Youtube<img class="social-img social-img--youtube" src="https://placeholdit.imgix.net/~text?txtsize=6&txt=50×50&w=50&h=50" width="50" height="50"></a>
+                </section>
+            </div>
+            <div class="designed">
+                <div class="designed__wrapper">
+                    <p class="designed__text">Разработано</p>
+                    <img class="designed__logo" src="https://placeholdit.imgix.net/~text?txtsize=5&txt=30×35&w=30&h=35" width="30" height="35">
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>
